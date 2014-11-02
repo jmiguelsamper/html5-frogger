@@ -45,7 +45,7 @@ define(['soundmanager2'], function(soundManager) {
                     });
                     soundManager.createSound({
                         id: 'win',
-                        url: 'sound/win.ogg',
+                        url: 'sound/next.mp3',
                         autoLoad: true,
                         loops: 1,
                         volume: 50
