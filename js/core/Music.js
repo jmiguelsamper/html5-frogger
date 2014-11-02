@@ -27,7 +27,7 @@ define(['soundmanager2'], function(soundManager) {
                         url: 'sound/hop.mp3',
                         autoLoad: true,
                         loops: 1,
-                        volume: 50
+                        volume: 35
                     });
                     soundManager.createSound({
                         id: 'next',
