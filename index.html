@@ -1,12 +1,25 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Effective JavaScript: Frogger</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <script src="resources.js"></script>
-    <script src="app.js"></script>
-    <script src="engine.js"></script>
-</body>
+    <head>
+        <title>Effective JavaScript: Frogger</title>
+        <link rel="stylesheet" href="css/style.css" />
+        <script data-main="js/main" src="js/lib/require-2.1.15.js"></script>
+    </head>
+    <body>
+        <div id="board">
+            <p id="title">HTML5 Frogger</p>
+            <p id="score">0</p>
+            <p>
+                Music by <a href="https://archive.org/details/iiiMicrocompoFamiboy80s" target="_blank">Morgothic</a>
+            </p>
+        </div>
+        <div id="finish">
+            Congratulations! <br />
+            You have won the game. <br />
+            <a href="#" onclick="location.reload()">Play again</a>
+        </div>
+        <div>
+            <canvas id="canvas"></canvas>
+        </div>
+    </body>
 </html>

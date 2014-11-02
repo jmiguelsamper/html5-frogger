@@ -1,0 +1,28 @@
+# Build
+/target/
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+.directory
+
+# IntelliJ Idea
+*.iml
+.idea
+
+# Netbeans
+nb-configuration.xml
+nbproject
+
+# Local configuration
+/src/main/resources/config.properties
+
+# Custom
+deleteTmp.sh
+emptyLjDatabase.sh
+
