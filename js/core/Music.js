@@ -24,21 +24,21 @@ define(['soundmanager2'], function(soundManager) {
                     });
                     soundManager.createSound({
                         id: 'hop',
-                        url: 'sound/hop.ogg',
+                        url: 'sound/hop.mp3',
                         autoLoad: true,
                         loops: 1,
                         volume: 50
                     });
                     soundManager.createSound({
                         id: 'next',
-                        url: 'sound/next.ogg',
+                        url: 'sound/next.mp3',
                         autoLoad: true,
                         loops: 1,
                         volume: 50
                     });
                     soundManager.createSound({
                         id: 'fail',
-                        url: 'sound/fail.ogg',
+                        url: 'sound/fail.mp3',
                         autoLoad: true,
                         loops: 1,
                         volume: 50
