@@ -1,3 +1,5 @@
-hop - Public Domain
-fail - http://soundbible.com/1945-Smashing.html
-next - http://soundbible.com/1823-Winning-Triumphal-Fanfare.html
+hop.ogg  - http://soundbible.com/1898-Spin-Jump.html
+fail.ogg - http://soundbible.com/1945-Smashing.html
+next.ogg - http://soundbible.com/1823-Winning-Triumphal-Fanfare.html
+win.ogg  - http://soundbible.com/1260-Auditorium-Applause.html
+

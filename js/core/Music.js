@@ -15,7 +15,7 @@ define(['soundmanager2'], function(soundManager) {
                         // Music from https://archive.org/details/iiiMicrocompoFamiboy80s - licence CC-by-nc-sa
                         url: 'https://archive.org/download/iiiMicrocompoFamiboy80s/03_morgothic_-_true_epic.ogg',
                         autoLoad: true,
-                        autoPlay: true,
+                        autoPlay: false,
                         loops: 100,
                         onload: function() {
                             soundManager.play('backgroundMusic');
@@ -24,31 +24,31 @@ define(['soundmanager2'], function(soundManager) {
                     });
                     soundManager.createSound({
                         id: 'hop',
-                        url: 'sound/hop.mp3',
+                        url: 'sound/hop.ogg',
                         autoLoad: true,
                         loops: 1,
                         volume: 35
                     });
                     soundManager.createSound({
                         id: 'next',
-                        url: 'sound/next.mp3',
+                        url: 'sound/next.ogg',
                         autoLoad: true,
                         loops: 1,
                         volume: 50
                     });
                     soundManager.createSound({
                         id: 'fail',
-                        url: 'sound/fail.mp3',
+                        url: 'sound/fail.ogg',
                         autoLoad: true,
                         loops: 1,
                         volume: 50
                     });
                     soundManager.createSound({
                         id: 'win',
-                        url: 'sound/next.mp3',
+                        url: 'sound/win.ogg',
                         autoLoad: true,
                         loops: 1,
-                        volume: 50
+                        volume: 100
                     });
                 }
             });
@@ -69,6 +69,7 @@ define(['soundmanager2'], function(soundManager) {
         
         win: function() {
             soundManager.play('win');
+            soundManager.stop('backgroundMusic');
         }
     };
 

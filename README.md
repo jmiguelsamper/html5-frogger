@@ -1,7 +1,11 @@
 HTML5 Frogger
 =============
 
-This is a fork from the final exercise of the Udacity's Object-Oriented Javascript course.
+This is a fork from the final exercise of the Udacity's Object-Oriented Javascript course
+from https://github.com/udacity/frontend-nanodegree-arcade-game
 
-It has been resolved and refactored to use RequireJS and the AMD Object-Orientation style.
+The exercise has been resolved and refactored to use RequireJS, Asynchronous Module Definition (AMD)
+and a proper object orientation.
+
+It can be played online at http://www.codeblackbelt.com/~jmsamper/html5-frogger/
 
