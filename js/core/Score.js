@@ -4,7 +4,8 @@ define([], function() {
     var INCREASE_SCORE = 10;
     var DECREASE_SCORE = 5;
     
-    function Score() {
+    function Score(music) {
+        this.music = music;
         this.points = 0;
     }
 
@@ -12,11 +13,13 @@ define([], function() {
 
         increase: function() {
             this.modifyPoints(INCREASE_SCORE);
+            this.music.next();
             this.render();
         },
 
         decrease: function() {
             this.modifyPoints(-DECREASE_SCORE);
+            this.music.fail();
             this.render();
         },
 

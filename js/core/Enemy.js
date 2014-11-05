@@ -6,8 +6,8 @@ define([], function() {
     var CELL_HEIGHT = 83;
     var COLLISION_DISTANCE = 60;
     
-    function Enemy(ctx, resources, row) {
-        this.ctx = ctx;
+    function Enemy(context, resources, row) {
+        this.context = context;
         this.resources = resources;
         this.row = row;
         this.x = Math.random() * STAGE_WIDTH;
@@ -26,7 +26,7 @@ define([], function() {
 
         // Returns a copy of this Enemy with the same speed but in a different x position. 
         cloneTraslated: function() {
-            var clone = new Enemy(this.ctx, this.resources, this.row);
+            var clone = new Enemy(this.context, this.resources, this.row);
             clone.x = (this.x + STAGE_WIDTH / 2) % STAGE_WIDTH; 
             clone.speed = this.speed;
             return clone;
@@ -58,7 +58,7 @@ define([], function() {
         },
 
         render: function() {
-            this.ctx.drawImage(this.resources.get(this.sprite), this.x, this.y);
+            this.context.drawImage(this.resources.get(this.sprite), this.x, this.y);
         },
         
         isThereCollision: function(player) {

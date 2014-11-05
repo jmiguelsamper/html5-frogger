@@ -11,8 +11,8 @@ define([], function() {
     var PLAYER_WIDTH = 67;
     var PLAYER_HEIGHT = 76;
 
-    function Player(ctx, resources, music) {
-        this.ctx = ctx;
+    function Player(context, resources, music) {
+        this.context = context;
         this.resources = resources;
         this.music = music;
         this.initialPosition();
@@ -52,7 +52,7 @@ define([], function() {
         },
         
         render: function() {
-            this.ctx.drawImage(this.resources.get(this.sprite), this.x, this.y);
+            this.context.drawImage(this.resources.get(this.sprite), this.x, this.y);
         },
 
         handleInput: function(key) {

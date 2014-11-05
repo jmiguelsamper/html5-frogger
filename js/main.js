@@ -6,6 +6,8 @@ requirejs.config({
 });
 
 require(['core/Engine'], function(Engine) {
-    console.log("Starting Frogger game");
-    new Engine().start();
+    var engine = new Engine();
+    engine.onReady(function() {
+        engine.start();
+    });
 });
