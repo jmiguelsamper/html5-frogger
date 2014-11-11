@@ -7,5 +7,5 @@ from https://github.com/udacity/frontend-nanodegree-arcade-game
 The exercise has been resolved and refactored to use RequireJS, Asynchronous Module Definition (AMD)
 and a proper object orientation.
 
-It can be played online at http://www.codeblackbelt.com/~jmsamper/html5-frogger/
+It can be played online at http://jmiguelsamper.github.io/html5-frogger
 
